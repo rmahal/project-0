@@ -1,0 +1,65 @@
+.green{
+  background-color: #28BC9C;
+  color: white
+}
+.white{
+  background-color: white;
+  color: black;
+}
+
+.main{
+  text-align: center;
+}
+
+#about{
+  margin-top: 7em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.first {
+    padding-top: 30px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.whiteHr{
+  width: 25%;
+  border-width: 0.1em;
+  border-color: white;
+  align-self: center;
+}
+
+.blackHr{
+  width: 25%;
+  border-width: 0.1em;
+  border-color: black;
+  align-self: center;
+}
+
+  @media only screen and (min-width: 768px) {
+  }
