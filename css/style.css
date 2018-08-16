@@ -33,6 +33,19 @@ img{
   align-self: center;
 }
 
+.contactFlex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+}
+form{
+  padding: 15px;
+  align-self: center;
+  align-content: center;
+  width: 75%;
+}
+
 p{
   text-align: left;
   padding: 20px;
