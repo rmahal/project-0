@@ -5,69 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./css/flickity.css" media="screen">
+
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+
+
+
+    <script src="./js/flickity.pkgd.js"></script>
     <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-    <script src="./js/app.js"></script>
+  crossorigin="anonymous" defer></script>
+
+    <script src="./js/app.js" defer></script>
 </head>
+
 <body>
+
     <header>
         <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
+            <a href="#">WELCOME</a> 
+            <div class="rightAlign">
+                <a href="#about">ABOUT</a>
+                <a href="#projects">PORTFOLIO</a>
+                <a href="#testimonials">QUOTES</a>
+                <a href="#contact">CONTACT</a>
+            </div>
         </nav>
     </header>
 
     <main class="main">
 
         <div id="name" class="green first">
-            <img src="" >
-            <h1>NAME</h1>
+            <img src="./img/personalImage.jpeg" >
+            <h1>RAJ MAHAL</h1>
             <hr noshade class="whiteHr">
             <div class="pageLine"></div>
             <h4>FULL STACK WEB DEVELOPER</h4>
+            
             <div id="about" class="green">
                 <h3>ABOUT</h3>
                 <hr noshade class="whiteHr">
-                <h4>Lorem Ipsum</h4>
+                <div class="aboutFlex">
+                    <div class="aboutLeft">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+                    </div>
+                    <div class="aboutRight">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div id="proects" class="white">
-                <h2>PROJECTS</h2>
-                <hr noshade class="blackHr">
-                <div class="pageLine"></div>
-                <h4>Lorem Ipsum</h4>
+        <div id="projects" class="white">
+            <h2>PROJECTS</h2>
+            <hr noshade class="blackHr">
+            
+            <div class="carousel"
+            data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+          </div>
+                      
         </div>
+
         <div id="testimonials" class="green">
-                <h2>TESTIMONIALS</h2>
-                <hr noshade class="whiteHr">
-                <div class="pageLine"></div>
-                <h4>Lorem Ipsum</h4>
+            <h2>TESTIMONIALS</h2>
+            <hr noshade class="whiteHr">
+            
+            <div class="fadingText">
+                <p class="quotes" >"Raj is a great person to work with because he has solid communication skills that allow others to understand his great ideas." -Francisco Sandoval
+                </p>
+                <p class="authors">
+
+                </p>
+            </div>
         </div>
+
         <div id="contact" class="white">
-                <h2>CONTACT ME</h2>
-                <hr noshade class="blackHr">
-                <div class="pageLine"></div>
-                    <div>
-                        <form action="" class ="container">
-                      
-                          <label for="fname">First Name</label>
-                          <input type="text" id="fname" name="firstname" placeholder="Your name">
-                      
-                          <label for="lname">Last Name</label>
-                          <input type="text" id="lname" name="lastname" placeholder="Your last name">
-                      
-                          <label for="subject">Subject</label>
-                          <textarea id="subject" name="subject" placeholder="Write something" style="height:200px"></textarea>
-                      
-                          <input type="submit" value="Submit">
-                      
-                        </form>
-                    </div>
+            <h2>CONTACT ME</h2>
+            <hr noshade class="blackHr">
+            <div>
+                <form action="" class ="container">
+                
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something" style="height:200px"></textarea>
+                
+                    <input type="submit" value="Submit">
+                
+                </form>
+            </div>
         </div>
     </main>
     <footer>

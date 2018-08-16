@@ -1,6 +1,6 @@
 .green{
   background-color: #28BC9C;
-  color: white
+  color: white;
 }
 .white{
   background-color: white;
@@ -10,13 +10,41 @@
 .main{
   text-align: center;
 }
-
+img{
+  margin-top: 5em;
+  height: 250px;
+  width: 250px;
+}
+#name{
+  margin-bottom: 1em;
+}
 #about{
   margin-top: 7em;
+  margin-bottom: 1em;
+}
+#projects{
+  margin-top: 5em;
+  box-sizing: border-box;
+}
+.aboutFlex{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   align-self: center;
+}
+
+p{
+  text-align: left;
+  padding: 20px;
+}
+
+.aboutLeft{
+  float: left;
+  width: 50%;
+}
+.aboutRight{
+  float: right;
+  width: 50%;
 }
 
 .navbar {
@@ -25,6 +53,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index:10
   }
 
 .navbar a {
@@ -47,6 +76,11 @@
   flex-wrap: wrap;
 }
 
+#testimonials{
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
 .whiteHr{
   width: 25%;
   border-width: 0.1em;
@@ -60,6 +94,42 @@
   border-color: black;
   align-self: center;
 }
+
+.rightAlign{
+  text-align: right;
+}
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
+
+
+
 
   @media only screen and (min-width: 768px) {
   }
