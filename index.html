@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="./css/flickity.css" media="screen">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
 
 
@@ -21,30 +21,35 @@
     <script src="./js/app.js" defer></script>
 </head>
 
-<body>
-
+<body class="scanlines">
+    <div class="wrapper">
     <header>
         <nav class="navbar">
-            <a href="#">WELCOME</a> 
-            <div class="rightAlign">
-                <a href="#about">ABOUT</a>
-                <a href="#projects">PORTFOLIO</a>
-                <a href="#testimonials">QUOTES</a>
-                <a href="#contact">CONTACT</a>
+            <div class="innerNav">
+                <div class="rightAlign">
+                    <a href="#about">ABOUT</a>
+                    <a href="#projects">PORTFOLIO</a>
+                    <a href="#testimonials">QUOTES</a>
+                    <a href="#contact">CONTACT</a>
+                </div>
             </div>
+            <div class="leftside"></div>
+            <div class="rightside"></div>
+            <div class="bottom"></div>
         </nav>
     </header>
 
     <main class="main">
 
+
         <div id="name" class="green first">
-            <img src="./img/personalImage.jpeg" >
+            <img class="personalPic" src="./img/personalImage.jpeg" >
             <h1>RAJ MAHAL</h1>
             <hr noshade class="whiteHr">
             <div class="pageLine"></div>
             <h4>FULL STACK WEB DEVELOPER</h4>
             
-            <div id="about" class="green">
+            <div id="about" class="green scanlines">
                 <h3>ABOUT</h3>
                 <hr noshade class="whiteHr">
                 <div class="aboutFlex">
@@ -53,38 +58,45 @@
                     </div>
                     <div class="aboutRight">
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+                            <img class="megaman" src="./img/megaman.gif">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="projects" class="white">
+        <div id="projects" class="white scanlines">
             <h2>PROJECTS</h2>
             <hr noshade class="blackHr">
             
             <div class="carousel"
             data-flickity='{ "wrapAround": true }'>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
+                
+                <div class="carousel-cell">
+                    <img src="./img/codingOne.jpeg">
+                </div>
+                <div class="carousel-cell">
+                    <img src="./img/codingTwo.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img src="./img/codingThree.jpeg">
+                </div>
           </div>
-                      
+             <img class="marco" src="./img/marco.gif">         
         </div>
 
-        <div id="testimonials" class="green">
+        <div id="testimonials" class="green scanlines">
             <h2>TESTIMONIALS</h2>
             <hr noshade class="whiteHr">
             
             <div class="fadingText">
-                <p class="quotes" >"Raj is a great person to work with because he has solid communication skills that allow others to understand his great ideas." -Francisco Sandoval
-                </p>
-                <p class="authors">
-
+                <p class="quotes" >"Raj is a great person to work with because he has solid communication skills that allow others to understand his great ideas." <br> -Francisco Sandoval
                 </p>
             </div>
+            <!-- <img class="stick" src="./img/joystick.gif"> -->
+            <img class="ryu"   src="./img/pikachu.gif">
         </div>
 
-        <div id="contact" class="white">
+        <div id="contact" class="white scanlines">
             <h2>CONTACT ME</h2>
             <hr noshade class="blackHr">
             <div class="contactFlex">
@@ -104,9 +116,12 @@
                 </form>
             </div>
         </div>
+        
     </main>
+    
     <footer>
 
     </footer>
+</div>
 </body>
 </html>
