@@ -8,107 +8,84 @@
   color: white;
   font-family: 'Press Start 2P', cursive;
 }
+
+/* header{
+  height: 100vh;
+  width: 100vw;
+} */
+
+.rightside {
+  height: 100vh;
+  width: 9.5%;
+  position: fixed;
+  z-index: 100;
+  top: 9%;
+  right: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 20px;
+  background-image: url('../img/rightSideBar.png');
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.leftside {
+  height: 100vh;
+  width: 13.3%; 
+  position: fixed;
+  z-index: 0;
+  top: 0; 
+  left: 0;
+  background-color: black; 
+  overflow-x: hidden; 
+  margin-top: 3em;
+  background-image: url('../img/leftSideBar.png');
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.navbar {
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  position: fixed;
+  height: 10%;
+  top: 0;
+  width: 100vw;
+  z-index: 2;
+  text-align: right;
+  background-color: none;
+  background-image: url('../img/topBar.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fadingText{
+  height: 10em;
+}
+
+
+
 h1{
   font-family: 'Press Start 2P', cursive;
   font-weight: 100;
 }
 
+h3{
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 100;
+}
+
+
+
 #name h1{
   margin-top: 0.5em;
 }
-
-.rightside {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 12.5%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 0;
-  background-color: black; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-}
-
-.leftside {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 100px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: -1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: black; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  margin-top: 3em;
-}
-
-.navbar {
-  overflow: hidden;
-  /* background-color: black; */
-  color: white;
-  text-decoration: none;
-  position: fixed;
-  height: 40px;
-  top: 0;
-  width: 100%;
-  z-index:-1;
-  text-align: right;
-  background-color: none;
-  /* background-image: url('../img/topBar.png');
-  background-repeat: no-repeat; */
-}
-
-/* .topBar{
-  position:fixed;
-  top:0;
-  z-index: 1;
-}
-.bottomBar{
-  position:fixed;
-  top:0;
-  z-index: 1;
-
-}
-.rightBar{
-  position:fixed;
-  top:0;
-  z-index: 1;
-}
-.leftBar{
-  position:fixed;
-  top:0;
-  z-index: 1;
-} */
 
 
 a{
   border: 2px;
 }
-/* .innerNav{
-  overflow: hidden;
-  background-color: black;
-  position: fixed;
-  height: 25px;
-  top: 15px;
-  width: 100%;
-  float: right;
-  z-index:1;
-} */
-
-.bottom {
-  height: 50px; /* Full-height: remove this if you want "auto" height */
-  width: 100%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: -1; /* Stay on top */
-  bottom: 0; /* Stay at the top */
-  left: 0;
-  background-color: black; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-}
-
-/* .wrapper{
-  overflow: scroll;
-} */
 
 .main{
   display: flex;
@@ -121,10 +98,22 @@ a{
   font-family: 'Press Start 2P', cursive;
   z-index: -1;
   margin: 1em auto;
-  /* overflow-y:scroll; */
 }
+
+.footer{
+  font-family: 'Press Start 2P', cursive;
+  color:white;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  width: 75%;
+  height: 50%;
+}
+
 .personalPic{
-  margin-top: 1em;
+  margin-top: 5em; 
   height: 250px;
   width: 250px;
 }
@@ -132,13 +121,16 @@ a{
   margin-bottom: 1em;
 }
 #about{
-  margin-top: 7em;
+  margin-top: 15em;
   margin-bottom: 1em;
 }
 #projects{
+  width: 95%;
+  display: block;
+  box-sizing: border-box;
   margin-top: 5em;
-  /* box-sizing: border-box; */
 }
+
 
 #testimonials{
   margin-top: 10em;
@@ -158,21 +150,20 @@ a.anchor{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-self: center;
+
 }
 
 .contactFlex{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-self: center;
   justify-content: center;
+  margin-bottom: 5em;
 }
 form{
   padding: 15px;
-  align-self: center;
   align-content: center;
-  width: 75%;
+
 }
 
 p{
@@ -182,8 +173,10 @@ p{
   line-height: 2.5em;
 }
 hr{
+  color:white;
   text-align: center;
   margin: auto;
+  margin-bottom: 1em;
 }
 .aboutLeft{
   float: left;
@@ -194,19 +187,6 @@ hr{
   width: 50%;
 }
 
-/* .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 0px 16px 5px, 5px;
-    text-decoration: none;
-    font-size: 17px;
-    background-color: black;
-    color: white;
-    border-radius: 5px; 
-    box-shadow: 5px 10px; 
-} */
 
 .first {
     padding-top: 30px;
@@ -231,22 +211,21 @@ hr{
   width: 25%;
   border-width: 0.1em;
   border-color: black;
-  align-self: center;
 }
 
 .rightAlign{
   text-align: right;
 }
 
-* { box-sizing: border-box; }
 
 body {   
   height: 100vh;
   width: 100vw;
+  position: relative;
   font-family: 'Press Start 2P', cursive;
   font-weight: thin;
   background-color: black;
-  /* overflow: hidden; */
+  z-index: 0;
 }
 
 #background{
@@ -264,27 +243,28 @@ body {
   font-family: 'Press Start 2P', cursive;
  }
 
-.carousel {
-  /* background: #EEE; */
+ .carousel {
+  margin-bottom: 3em;
 }
 
 .carousel-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  /* background: #8C8; */
+  width: 100%;
+  height: 450px;
+  margin-right: 0px;
   border-radius: 5px;
-  /* counter-increment: carousel-cell; */
 }
 
-/* cell number */
 .carousel-cell:before {
   display: block;
   text-align: center;
-  /* content: counter(carousel-cell); */
   line-height: 200px;
   font-size: 80px;
   color: white;
+}
+
+.caroImg{
+  width: 100%;
+  height: 450px;
 }
 
 
@@ -296,39 +276,45 @@ body {
 }
 
 
-.stick{
-  float: left;
-  width: 150px;
-  height: 150px;
-}
-
-.ryu{
+.pikachu{
   float: right;
   width: 150px;
   height: 150px;
+  margin-top: 17.5em;
 }
 
-.marco{
+.kirby{
+  position: relative;
   float: left;
-  width: 150px;
+  margin-left: 0%;
+  margin-bottom: 5em;
+  width: 250px;
   height: 150px;
-  padding: 10px;
-
+  padding: 1px;
 }
 
 
 
 
 .wrapper{
-  overflow: none;
-  margin-top: 5em;
-  z-index: -2;
-  overflow: scroll;
+  margin-top: 10em;
+  /* height: 90%; */
+  z-index: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+ 
 .scanlines {
   position: relative;
-  /* overflow: hidden; */
 }
 .scanlines:before, .scanlines:after {
   display: block;
@@ -337,19 +323,20 @@ body {
   position: absolute;
 }
 .scanlines:before {
-  width: 100%;
+  width: 75%;
   height: 2px;
-  z-index: 2147483649;
+  left: 10%;
+  z-index: 0;
   background: rgba(0, 0, 0, 0.3);
   opacity: 0.75;
   animation: scanline 6s linear infinite;
 }
 .scanlines:after {
-  top: 0;
-  right: 0;
+  top: 1%;
+  right: 7.5%;
   bottom: 0;
-  left: 0;
-  z-index: 2147483648;
+  left: 12.5%;
+  z-index: 0;
   background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.3) 51%);
   background-size: 100% 4px;
   animation: scanlines 1s steps(60) infinite;
@@ -366,7 +353,7 @@ body {
   }
 }
 
-
+ 
 
 
 
