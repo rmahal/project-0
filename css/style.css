@@ -13,11 +13,15 @@ h1{
   font-weight: 100;
 }
 
+#name h1{
+  margin-top: 0.5em;
+}
+
 .rightside {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 20px; /* Set the width of the sidebar */
+  width: 12.5%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: -1; /* Stay on top */
+  z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   right: 0;
   background-color: black; /* Black */
@@ -27,28 +31,55 @@ h1{
 
 .leftside {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 20px; /* Set the width of the sidebar */
+  width: 100px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: -1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: black; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+  margin-top: 3em;
 }
 
 .navbar {
   overflow: hidden;
-  background-color: black;
+  /* background-color: black; */
   color: white;
   text-decoration: none;
   position: fixed;
-  height: 50px;
+  height: 40px;
   top: 0;
   width: 100%;
-  z-index:1;
+  z-index:-1;
   text-align: right;
+  background-color: none;
+  /* background-image: url('../img/topBar.png');
+  background-repeat: no-repeat; */
 }
+
+/* .topBar{
+  position:fixed;
+  top:0;
+  z-index: 1;
+}
+.bottomBar{
+  position:fixed;
+  top:0;
+  z-index: 1;
+
+}
+.rightBar{
+  position:fixed;
+  top:0;
+  z-index: 1;
+}
+.leftBar{
+  position:fixed;
+  top:0;
+  z-index: 1;
+} */
+
+
 a{
   border: 2px;
 }
@@ -64,7 +95,7 @@ a{
 } */
 
 .bottom {
-  height: 15px; /* Full-height: remove this if you want "auto" height */
+  height: 50px; /* Full-height: remove this if you want "auto" height */
   width: 100%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: -1; /* Stay on top */
@@ -80,13 +111,20 @@ a{
 } */
 
 .main{
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  margin: 25px;
+  align-content: center;
+  justify-content: center;
+  width: 75%;
+  height: 50%;
   font-family: 'Press Start 2P', cursive;
-
+  z-index: -1;
+  margin: 1em auto;
+  /* overflow-y:scroll; */
 }
 .personalPic{
-  margin-top: 5em;
+  margin-top: 1em;
   height: 250px;
   width: 250px;
 }
@@ -209,7 +247,18 @@ body {
   font-weight: thin;
   background-color: black;
   /* overflow: hidden; */
- }
+}
+
+#background{
+  background-image: url("../img/gbcScreen.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height:100%;
+  width:100%;
+  z-index:1;
+}
+
 
  h2{
   font-family: 'Press Start 2P', cursive;
@@ -272,6 +321,9 @@ body {
 
 .wrapper{
   overflow: none;
+  margin-top: 5em;
+  z-index: -2;
+  overflow: scroll;
 }
 
 .scanlines {
