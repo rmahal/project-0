@@ -9,10 +9,6 @@
   font-family: 'Press Start 2P', cursive;
 }
 
-/* header{
-  height: 100vh;
-  width: 100vw;
-} */
 
 .rightside {
   height: 100vh;
@@ -75,7 +71,10 @@ h3{
   font-family: 'Press Start 2P', cursive;
   font-weight: 100;
 }
-
+h4{
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 100;
+}
 
 
 #name h1{
@@ -119,11 +118,19 @@ a{
 }
 #name{
   margin-bottom: 1em;
+  color: black;
+  background-color: #FFF6FE;
+  margin-bottom: 5em;
 }
+
 #about{
+  padding: 3em;
   margin-top: 15em;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
+  background-image: url('../img/megmanstage.png');
+  background-size: cover;
 }
+
 #projects{
   width: 95%;
   display: block;
@@ -202,7 +209,7 @@ hr{
 .whiteHr{
   width: 25%;
   border-width: 0.1em;
-  border-color: white;
+  border-color: black;
   align-content: center;
   justify-content: center;
 }
@@ -332,7 +339,7 @@ body {
   animation: scanline 6s linear infinite;
 }
 .scanlines:after {
-  top: 1%;
+  top: 0%;
   right: 7.5%;
   bottom: 0;
   left: 12.5%;

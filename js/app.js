@@ -22,5 +22,27 @@ $(document).ready(function() {
 
     change()
 
+
+
+
+    // var abtflx = document.qer
+    // var nystories = document.querySelector("#aboutFlex").offsetTop;
+    // window.onscroll = function() {
+    //     if (window.pageYOffset > 0) {
+    //         var opac = (window.pageYOffset / nystories);
+    //         console.log(opac);
+    //         nystories.background = "linear-gradient(rgba(255, 255, 255, " + opac + "), rgba(255, 255, 255, " + opac + ")), url('../img/megmanstage.png') no-repeat";
+  
+    //     }
+    // }
+
+
+    $(window).bind("scroll", function(event) {        
+        $("#aboutFlex").each(function() {
+          $(this).css('background-image','url("../img/megmanstage.png")').fadeIn();
+        });
+    });
+
+
     
 });
