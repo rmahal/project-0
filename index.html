@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="./css/flickity.css" media="screen">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
 
 
@@ -22,26 +23,38 @@
 </head>
 
 <body>
-    <div class="wrapper scanlines">
+    <div class="wrapper scanlines scroll-item">
     <header>
         <!-- <nav class="navbar"></nav> -->
-        <div class="navbar">
-            <!-- <div class="dropdown">
+        <!-- <div class="navbar">
+             <div class="dropdown">
                 <span>test</span>
                 <div class="dropdown-content">
                     <p>Hello World!</p>
                 </div>
-            </div> -->
-        </div>
+            </div> 
+        </div> -->
+        <!-- <div class="topnav" id="myTopnav">
+                <div class="dropdown">
+                  <button class="dropbtn">Dropdown 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#about">About</a>
+                    <a href="#projets">Portfolio</a>
+                    <a href="#">Quotes</a>
+                    <a href="#">Quotes</a>
+                  </div>
         <div class="leftside"></div>
-        <div class="rightside"></div>
+        <div class="rightside"></div> -->
     </header>
 
-    <main class="main">
+    <main class="main inner">
+        
         <div id="name" class="green first">
             <img class="personalPic" src="./img/personalImage.jpeg" >
             <h1>RAJ MAHAL</h1>
-            <hr noshade class="whiteHr">
+            <hr noshade class="blackHr">
             <div class="pageLine"></div>
             <h4>FULL STACK WEB DEVELOPER</h4>
             
@@ -90,34 +103,35 @@
             </div>
             <img class="pikachu"   src="./img/pikachu.gif">
         </div>
-
-        <div id="contact" class="white">
-            <h2>CONTACT ME</h2>
-            <hr noshade class="blackHr">
-            <div class="contactFlex">
-                <form action="" class ="container">
-                
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name">
-                
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name">
-                
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something" style="height:200px"></textarea>
-                
-                    <input type="submit" value="Submit">
-                
-                </form>
+        <div class="contactImage">
+            <div id="contact" class="white">
+                <h2>CONTACT ME</h2>
+                <hr noshade class="whiteHr">
+                <div class="contactFlex">
+                    <form action="" class ="container">
+                    
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name">
+                    
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                    
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something" style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                    
+                    </form>
+                </div>
+                <img class="kirby" src="./img/kirby.gif"/>
             </div>
-            <img class="kirby" src="./img/kirby.gif"/>
         </div>
         
     </main>
     
     <footer class="footer">
-        <p>Test</p>
-        <p>Test</p>
+        <p>Come check out my work at</p>
+        <p>GitHub</p>
         <p>Test</p>
         <p>Test</p>
     </footer>
