@@ -107,10 +107,13 @@ a{
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  align-content: center;
-  justify-content: center;
+  align-content: space-around;
+  justify-content: space-evenly;
   width: 75%;
   height: 50%;
+  margin-left: 15em;
+  margin-top: 10em;
+
 }
 
 .personalPic{
@@ -436,6 +439,8 @@ body {
   transition: 0.3s;
 }
 
+
+
 #kirby:hover {opacity: 0.7;}
 
 .modal {
@@ -459,6 +464,10 @@ body {
   max-width: 700px;
 }
 
+#footFlex{
+  display: flex;
+  flex-direction: column
+}
 
 .modal-content, #caption {    
   -webkit-animation-name: zoom;
@@ -505,6 +514,12 @@ body {
   background-image: url('../img/topBar.png');
   background-size: cover;
   z-index: 1;
+}
+
+
+.gbcart{
+  width: 150px;
+  height: 150px;
 }
 
 
@@ -632,6 +647,25 @@ body {
     float: none;
     width: 100%;
   }
+
+
+
+  .footer{
+    font-family: 'Press Start 2P', cursive;
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: space-around;
+    justify-content: space-evenly;
+    width: 75%;
+    height: 50%;
+    margin-left: 5em;
+    margin-top: 5em;
+  
+  }
+
+
 
 }
 
