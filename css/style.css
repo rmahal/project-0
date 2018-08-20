@@ -88,6 +88,10 @@ a{
   border: 2px;
 }
 
+h3{
+  text-align: center;
+}
+
 .main{
   display: flex;
   flex-wrap: wrap;
@@ -163,6 +167,7 @@ a{
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 7em;
+  margin-bottom: 10em;
   width: 100vw;
   height: 100vh;
   padding-bottom: 2em;
@@ -527,144 +532,162 @@ body {
 
 @media only screen and (max-width: 968px) {
 
-  .aboutFlex{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+      #name{
+        margin-bottom: 0em;
+        margin-top: 3em;
+        color: white;
+      }
 
-  .scanlines {
-    position: relative;
-  }
-  .scanlines:before, .scanlines:after {
-    display: block;
-    pointer-events: none;
-    content: "";
-    position: absolute;
-  }
-  .scanlines:before {
-    width: 100%;
-    height: 2px;
-    left: 0%;
-    z-index: 0;
-    background: rgba(0, 0, 0, 0.3);
-    opacity: 0.75;
-    animation: scanline 6s linear infinite;
-  }
-  .scanlines:after {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.3) 51%);
-    background-size: 100% 4px;
-    animation: scanlines 1s steps(60) infinite;
-  }
-  
-  @keyframes scanline {
-    0% {
-      transform: translate3d(0, 200000%, 0);
-    }
-  }
-  @keyframes scanlines {
-    0% {
-      background-position: 0 50%;
-    }
-  }
+      .aboutFlex{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
 
-  body{
-    background-image: none;
-  }
+      .scanlines {
+        position: relative;
+      }
+      .scanlines:before, .scanlines:after {
+        display: block;
+        pointer-events: none;
+        content: "";
+        position: absolute;
+      }
+      .scanlines:before {
+        width: 100%;
+        height: 2px;
+        left: 0%;
+        z-index: 0;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0.75;
+        animation: scanline 6s linear infinite;
+      }
+      .scanlines:after {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.3) 51%);
+        background-size: 100% 4px;
+        animation: scanlines 1s steps(60) infinite;
+      }
+      
+      @keyframes scanline {
+        0% {
+          transform: translate3d(0, 200000%, 0);
+        }
+      }
+      @keyframes scanlines {
+        0% {
+          background-position: 0 50%;
+        }
+      }
 
-  .dropdown {
-    top: 1em;
-    right: 1em;
-    position: fixed;
-    overflow: hidden;
-  }
+      body{
+        background-image: none;
+      }
 
-  p{
-    font-size: 10px;
-  }
+      .dropdown {
+        top: 1em;
+        right: 1em;
+        position: fixed;
+        overflow: hidden;
+      }
 
-
-  .main{
-    /* overflow-y: scroll; */
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    font-family: 'Press Start 2P', cursive;
-    z-index: -1;
-    margin: 1em auto;
-  }
-  
-  #offsetAbout{
-    color: none;
-    visibility: hidden;
-  }
-
-  #offsetProject{
-    color: none;
-    visibility: hidden;
-  }
-
-  #offsetTestimonial{
-    color: none;
-    visibility: hidden;
-  }
-
-  #offsetContact{
-    color: none;
-    visibility: hidden;
-  }
-
-  .aboutP{
-    text-align: left;
-  }
+      p{
+        font-size: 10px;
+      }
 
 
-  #about{
-    border-top:42px;
-    padding: 3em;
-    margin-top: 7em;
-    text-align: center;
-    margin-bottom: 0em;
-    background-image: url('../img/megmanstage.png');
-    background-size: cover;
-    text-align: left;
-  }
-
-
-  .aboutLeft{
-    float: none;
-    width: 100%;
-  }
-
-  .aboutRight{
-    float: none;
-    width: 100%;
-  }
+      .main{
+        /* overflow-y: scroll; */
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+        font-family: 'Press Start 2P', cursive;
+        z-index: -1;
+        margin: 1em auto;
+      }
 
 
 
-  .footer{
-    font-family: 'Press Start 2P', cursive;
-    color:white;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    align-content: space-around;
-    justify-content: space-evenly;
-    width: 75%;
-    height: 50%;
-    margin-left: 5em;
-    margin-top: 5em;
-  
-  }
+      #offsetAbout{
+        color: none;
+        visibility: hidden;
+      }
 
+      #offsetProject{
+        color: none;
+        visibility: hidden;
+      }
+
+      #offsetTestimonial{
+        color: none;
+        visibility: hidden;
+      }
+
+      #offsetContact{
+        color: none;
+        visibility: hidden;
+      }
+
+      .aboutP{
+        text-align: left;
+      }
+
+
+      #about{
+        border-top:42px;
+        padding: 3em;
+        margin-top: 7em;
+        text-align: center;
+        margin-bottom: 0em;
+        background-image: url('../img/megmanstage.png');
+        background-size: cover;
+        text-align: left;
+      }
+
+
+      .aboutLeft{
+        float: none;
+        width: 100%;
+      }
+
+      .aboutRight{
+        float: none;
+        width: 100%;
+      }
+
+
+
+      .footer{
+        font-family: 'Press Start 2P', cursive;
+        color:white;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-content: space-around;
+        justify-content: space-evenly;
+        width: 75%;
+        height: 50%;
+        margin-left: 5em;
+        margin-top: 5em;
+      
+      }
+
+
+
+      .pikachu{
+        float: right;
+        width: 150px;
+        height: 150px;
+        margin-top: 12.5em;
+      }
 
 
 }
