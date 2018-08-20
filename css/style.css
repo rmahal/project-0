@@ -114,6 +114,7 @@ a{
   height: 250px;
   width: 250px;
 }
+
 #name{
   margin-bottom: 0em;
   margin-top: 7em;
@@ -410,9 +411,49 @@ body {
     body{
       background-image: none;
     }
+
+
     p{
-      font-size: 9px;
+      font-size: 10px;
     }
+
+
+    .main{
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      align-content: center;
+      justify-content: center;
+      /* width: 70%; */
+      /* height: 50%; */
+      font-family: 'Press Start 2P', cursive;
+      z-index: -1;
+      margin: 1em auto;
+    }
+
+    #about{
+      padding: 3em;
+      margin-top: 20em;
+      text-align: center;
+      margin-bottom: 0em;
+      background-image: url('../img/megmanstage.png');
+      background-size: cover;
+      text-align: justify;
+    }
+
+
+    .aboutLeft{
+      float: left;
+      width: 50%;
+    }
+
+    .aboutRight{
+      float: right;
+      width: 50%;
+      line-height: 0;
+    }
+
+
 
   }
 
@@ -444,39 +485,54 @@ body {
     display: none;
   }
   
+
+
   .dropdown {
-      float: left;
-      overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-      font-size: 17px;    
-      border: none;
-      outline: none;
-      color: white;
-      padding: 14px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-  }
-  
+    /* float: left; */
+    margin-left: 10em;
+    position: fixed;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+
+
   .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-  }
-  
-  .dropdown-content a {
-      float: none;
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-  }
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
   
 
   
