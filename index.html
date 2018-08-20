@@ -25,15 +25,16 @@
 <body>
     <div class="wrapper scanlines scroll-item">
     <header>
+            <nav><div id="navbar"></div></nav>
             <div class="dropdown">
                     <button class="dropbtn">Menu 
                       <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                      <a href="#about">About</a>
-                      <a href="#projects">Projects</a>
-                      <a href="#testimonials">Testimonials</a>
-                      <a href="#contact">Contact</a>
+                      <a href="#offsetAbout">About</a>
+                      <a href="#offsetProjects">Projects</a>
+                      <a href="#offsetTestimonials">Testimonials</a>
+                      <a href="#offsetContact">Contacts</a>
             </div>
             </div>
     </header>
@@ -46,31 +47,31 @@
             <hr noshade class="blackHr">
             <div class="pageLine"></div>
             <h4>FULL STACK WEB DEVELOPER</h4>
-            
+            <h5 id="offsetAbout">offest </h5>
             <div id="about" class="green">
                 <h3>ABOUT</h3>
                 <hr noshade class="whiteHr">
                 <div class="aboutFlex">
                     <div class="aboutLeft">
-                            <p class="aboutP">"Hi i'm Raj. I'm a recent computer science graduate from California state University East Bay "</p>
+                            <p class="aboutP">"Hi im Raj. I am a webdeveloper from General Assembly."</p>
                     </div>
                     <div class="aboutRight">
 
-                            <ul class="aboutP">Professional Skills:
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                            <li>Django</li>
-                            <li>Lambda</li>
-                            </ul>
+                            <p class="aboutP">Professional Skills:</p>
+                            <br>
+                            <p>- HTML</p>
+                            <p>- CSS</p>
+                            <p>- JavaScript</p>
+                            <p>- Python</p>
+                            <p>- Django</p>
+                            <p>- Lambda</p>
                             
                             <img class="megaman" src="./img/megaman.gif">
                     </div>
                 </div>
             </div>
         </div>
-
+        <h5 id="offsetProjects">offest </h5>
         <div id="projects" class="green">
             <h2>PROJECTS</h2>
             <hr noshade class="whiteHr">
@@ -88,9 +89,12 @@
                     <img class="caroImg" src="./img/geoquakes.png">
                 </div>
           </div>
-             <img class="kirby" src="./img/samus.gif">         
+             <img class="kirby" src="./img/samus.gif">
+             
+             
+             
         </div>
-
+        <h5 id="offsetTestimonials">offest </h5>
         <div id="testimonials" class="green">
             <h2>TESTIMONIALS</h2>
             <hr noshade class="whiteHr">
@@ -101,10 +105,18 @@
             </div>
             <img class="pikachu"   src="./img/pikachu.gif">
         </div>
+        <h5 id="offsetContact">offest </h5>
         <div class="contactImage">
-            <div id="contact" class="white">
+                <div id="contact" class="white">
+        <img class="kirby" id="kirby" src="./img/kirby.gif"/>
+        <div id="modalOne" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="kirb1">
+        </div>
+
+
                 <h2>CONTACT ME</h2>
-                <hr noshade class="whiteHr">
+                <!-- <hr noshade class="whiteHr"> -->
                 <div class="contactFlex">
                     <form action="" class ="container">
                     
@@ -121,7 +133,6 @@
                     
                     </form>
                 </div>
-                <img class="kirby" src="./img/kirby.gif"/>
             </div>
         </div>
         
